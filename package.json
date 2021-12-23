@@ -1,0 +1,19 @@
+{
+  "name": "ambee-aqi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k-gopal/ambee-aqi.git"
+  },
+  "author": "Gopal Khichar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/k-gopal/ambee-aqi/issues"
+  },
+  "homepage": "https://github.com/k-gopal/ambee-aqi#readme"
+}
