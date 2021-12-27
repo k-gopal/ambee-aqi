@@ -1,0 +1,365 @@
+{
+	"info": {
+		"_postman_id": "69570f82-47fa-4b40-b431-1daeace6552c",
+		"name": "Ambee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "signUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Gopal\",\n    \"email\": \"gkofficial123759@gmail.com\",\n    \"password\": \"Gopal@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/auth/signUp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"auth",
+						"signUp"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "signUp",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Gopal\",\n    \"email\": \"gkofficial123759@gmail.com\",\n    \"password\": \"Gopal@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/auth/signUp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"signUp"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "x-auth-token"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "319"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"13f-MQWVjBTzBS4OjTimcvNRw2stxWc\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Dec 2021 08:41:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"statusCode\": 200,\n    \"message\": \"User is successfully registered.\",\n    \"payload\": {\n        \"email\": \"gkofficial123759@gmail.com\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imdrb2ZmaWNpYWwxMjM3NTlAZ21haWwuY29tIiwiaWF0IjoxNjQwNTk0NTE1LCJleHAiOjE2NDA1OTYzMTV9.FEIWELr1oUvWsw1jEQTp-pN1ZUS6IWlG847CSLlplmw\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "signIn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"gkofficial123759@gmail.com\",\n    \"password\": \"Gopal@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/auth/signIn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"auth",
+						"signIn"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "signIn",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"gkofficial123759@gmail.com\",\n    \"password\": \"Gopal@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/auth/signIn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"signIn"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "x-auth-token"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "318"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"13e-TbxftC6AaMwclprerVOVnctmJj0\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Dec 2021 08:43:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"statusCode\": 200,\n    \"message\": \"User is successfully signed in.\",\n    \"payload\": {\n        \"email\": \"gkofficial123759@gmail.com\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imdrb2ZmaWNpYWwxMjM3NTlAZ21haWwuY29tIiwiaWF0IjoxNjQwNTk0NjIwLCJleHAiOjE2NDA1OTY0MjB9._Rebxy30EjmUUmh23TQoYEXsJu738d_Do47b91vZh_U\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "aqi-calculator",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imdrb2ZmaWNpYWwxMjM3NTlAZ21haWwuY29tIiwiaWF0IjoxNjQwNTk0NjIwLCJleHAiOjE2NDA1OTY0MjB9._Rebxy30EjmUUmh23TQoYEXsJu738d_Do47b91vZh_U",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"pollutant\": \"PM2.5\",\n    \"concentration\": 85\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/aqi/aqi-calculator",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"aqi",
+						"aqi-calculator"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "aqi-calculator",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imdrb2ZmaWNpYWwxMjM3NTlAZ21haWwuY29tIiwiaWF0IjoxNjQwNTk0NjIwLCJleHAiOjE2NDA1OTY0MjB9._Rebxy30EjmUUmh23TQoYEXsJu738d_Do47b91vZh_U",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pollutant\": \"PM2.5\",\n    \"concentration\": 85\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/aqi/aqi-calculator",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"aqi",
+								"aqi-calculator"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "x-auth-token"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "310"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"136-RknrT7QSLHZ45dByCacGDMwpvmQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Dec 2021 09:01:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"statusCode\": 200,\n    \"message\": \"AQI is successfully calculated.\",\n    \"payload\": {\n        \"result\": 62.5,\n        \"category\": {\n            \"color\": \"yellow\",\n            \"statement\": \"Air quality is acceptable. However, there may be a risk for some people, particularly those who are unusually sensitive to air pollution.\",\n            \"concern\": \"Moderate\"\n        }\n    }\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imdrb2ZmaWNpYWwwNjBAZ21haWwuY29tIiwiaWF0IjoxNjQwNTkxNjU5LCJleHAiOjE2NzIxMjc2NTl9.CiWuEpyc188V9jIydo8pLBPXZIvsGNLu0KXBrqj_Z0s"
+		}
+	]
+}
