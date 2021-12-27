@@ -7,8 +7,7 @@ const connect = async (
     dbPass = process.env.DB_PASSWORD
 ) => {
     try {
-        // dbString = dbString.replace("<host>", dbHost).replace("<password>", dbPass);
-        dbString = "mongodb+srv://gopalk:Gopal%40T2910@one-database.yvyiz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+        dbString = dbString.replace("<host>", dbHost).replace("<password>", dbPass);
         return await mongoose.connect(dbString, { useNewUrlParser: true, useUnifiedTopology: true })
     } catch (error) {
         console.log("error in db connection", error);
